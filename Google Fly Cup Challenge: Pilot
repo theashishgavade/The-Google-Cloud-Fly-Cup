@@ -3,26 +3,26 @@ Just change the NAME given in your lab
 export BUCKET_NAME=
 export BUCKET_LOCATION=
 
-### Task 1 
+# Task 1 
 
 gsutil mb -l $BUCKET_LOCATION -b on gs://$BUCKET_NAME 
 
-###  Task 2 
+#  Task 2 
 
 bq mk drl
 bq load --source_format=CSV drl.pilot-event-times spls/gsp396/lab2.csv --auto-detect
 
-###  Task 3 
+#  Task 3 
 
 gsutil cp gs://spls/gsp396/DRL2.ipynb .
 
-### Task 4 
+# Task 4 
 
 Run all of the cells in the DRL2.ipynb file.
  
 When setting the PROJECT variable, replace its value with the unique project id of the qwiklabs project
 
-###  Task 5
+#  Task 5
 
 ## Navigate to Vertex AI > Model Registry
  
@@ -41,7 +41,7 @@ Choose 2.8 for the Model Framework Version
  
 PROJECT-ID/model
 
-###  Task 6 
+#  Task 6 
 
 Navigate to Vertex AI > Endpoints
  
@@ -59,7 +59,7 @@ Choose n1-standard-2 for machine type
  
 Click Create
 
-###  Task 7 
+#  Task 7 
 
 ## Return to your notebook tab
  
